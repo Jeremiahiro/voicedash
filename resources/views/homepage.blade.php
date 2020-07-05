@@ -344,5 +344,6 @@
 @endsection
 
 @section('script')
-    
+    <script src="{{ asset('frontend/js/dashboard.js') }}"></script>
+    <script src="{{ asset('frontend/js/todolist.js') }}"></script>
 @endsection

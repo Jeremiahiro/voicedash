@@ -7207,6 +7207,9 @@ button.bg-dark:focus {
 .rounded-lg {
   border-radius: 0.3rem !important; }
 
+.rounded-xl {
+  border-radius: 1.5rem !important; }
+
 .rounded-circle {
   border-radius: 50% !important; }
 
@@ -10324,7 +10327,7 @@ code {
 /* Footer */
 .footer {
   background: #f2edf3;
-  border-top: 1px solid #e7dee9;
+  /* border-top: 1px solid #e7dee9; */
   padding: 30px 1rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
