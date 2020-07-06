@@ -5523,7 +5523,8 @@ input[type="button"].btn-block {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem; }
+  padding: 0 1.25rem; 
+}
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -9706,7 +9707,7 @@ button.bg-dark:focus {
   color: #b66dff !important; }
 
 a.text-primary:hover, .list-wrapper .completed a.remove:hover, a.text-primary:focus, .list-wrapper .completed a.remove:focus {
-  color: #9021ff !important; }
+  color: #b66dff !important; }
 
 .text-secondary, .list-wrapper .remove {
   color: #c3bdbd !important; }
@@ -10266,6 +10267,9 @@ address p {
   @media (max-width: 991px) {
     .error-page h1 {
       font-size: 8rem; } }
+
+.icon-xl {
+  font-size: 5rem; }
 
 .icon-lg {
   font-size: 2.5rem; }
@@ -11891,7 +11895,7 @@ code {
   border: 0;
   background: #fff; }
   .card .card-body {
-    padding: 2.5rem 2.5rem; }
+    padding: 1rem 2.5rem 0 2.5rem; }
     .card .card-body + .card-body {
       padding-top: 1rem; }
   .card .card-title {
@@ -13041,7 +13045,7 @@ dl {
   background: #ffffff;
   font-family: "ubuntu-regular", sans-serif;
   padding: 0;
-  width: 260px;
+  width: 100px;
   z-index: 11;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
@@ -13356,7 +13360,7 @@ dl {
 .main-panel {
   -webkit-transition: width 0.25s ease, margin 0.25s ease;
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 260px);
+  width: calc(100% - 100px);
   min-height: calc(100vh - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
