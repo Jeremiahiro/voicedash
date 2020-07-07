@@ -21,7 +21,7 @@
                 <div class="col-md-4 grid-margin">
                     <div class="card rounded-xl bg-gradient-light text-primary">
                         <div class="card-body d-flex">
-                            <h2 class="mb-5" style="font-size: 61.7988px;">
+                            <h2 class="mb-5" style="font-size: 51.7988px;">
                                 <i class="mdi mdi-microphone-variant"></i> 11
                             </h2>
                             <h5 class="text-dark mt-4" style="font-size: 15.4497px;">Audio Generated</h5>
@@ -31,7 +31,7 @@
                 <div class="col-md-4 grid-margin">
                   <div class="card rounded-xl bg-gradient-light text-primary">
                     <div class="card-body d-flex">
-                        <h2 class="mb-5" style="font-size: 61.7988px;">
+                        <h2 class="mb-5" style="font-size: 51.7988px;">
                             <i class="mdi mdi-account-multiple"></i> 11
                         </h2>
                         <h5 class="text-dark mt-4" style="font-size: 15.4497px;">Subusers</h5>
@@ -41,7 +41,7 @@
                 <div class="col-md-4 grid-margin">
                   <div class="card rounded-xl bg-gradient-light text-primary">
                     <div class="card-body d-flex">
-                        <h2 class="mb-5" style="font-size: 61.7988px;">
+                        <h2 class="mb-5" style="font-size: 51.7988px;">
                             <i class="mdi mdi-play-box-outline"></i> 11
                         </h2>
                         <h5 class="text-dark mt-4" style="font-size: 15.4497px;">Vidio Created</h5>
