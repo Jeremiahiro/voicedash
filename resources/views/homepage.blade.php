@@ -17,63 +17,284 @@
                         <i class="mdi mdi-home"></i>
                     </span> Dashboard </h3>
             </div>
-            <div class="row">
-                <div class="col-md-4 grid-margin">
+            <div class="row grid-margin">
+                <div class="col-md-4">
                     <div class="card rounded-xl bg-gradient-light text-primary">
-                        <div class="card-body d-flex">
-                            <h2 class="mb-5" style="font-size: 51.7988px;">
+                        <div class="card-body d-flex align-items-center">
+                            <h1 class="" style="font-size: 61.7988px;">
                                 <i class="mdi mdi-microphone-variant"></i> 11
-                            </h2>
-                            <h5 class="text-dark mt-4" style="font-size: 15.4497px;">Audio Generated</h5>
+                            </h1>
+                            <h4 class="text-dark">Audio Generated</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 grid-margin">
-                  <div class="card rounded-xl bg-gradient-light text-primary">
-                    <div class="card-body d-flex">
-                        <h2 class="mb-5" style="font-size: 51.7988px;">
-                            <i class="mdi mdi-account-multiple"></i> 11
-                        </h2>
-                        <h5 class="text-dark mt-4" style="font-size: 15.4497px;">Subusers</h5>
+                <div class="col-md-4">
+                    <div class="card rounded-xl bg-gradient-light text-primary">
+                        <div class="card-body d-flex align-items-center">
+                            <h1 class="" style="font-size: 61.7988px;">
+                                <i class="mdi mdi-account-multiple"></i> 11
+                            </h1>
+                            <h4 class="text-dark">Subusers</h3>
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div class="col-md-4 grid-margin">
-                  <div class="card rounded-xl bg-gradient-light text-primary">
-                    <div class="card-body d-flex">
-                        <h2 class="mb-5" style="font-size: 51.7988px;">
-                            <i class="mdi mdi-play-box-outline"></i> 11
-                        </h2>
-                        <h5 class="text-dark mt-4" style="font-size: 15.4497px;">Vidio Created</h5>
+                <div class="col-md-4">
+                    <div class="card rounded-xl bg-gradient-light text-primary">
+                        <div class="card-body d-flex align-items-center">
+                            <h1 class="" style="font-size: 61.7988px;">
+                                <i class="mdi mdi-play-box-outline"></i> 11
+                            </h1>
+                            <h4 class="text-dark">Video Created</h4>
+                        </div>
                     </div>
                 </div>
-              </div>
             </div>
+
             <div class="row">
-                <div class="col-md-7 grid-margin stretch-card">
+                <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
                             <div class="clearfix">
-                                <h4 class="card-title float-left">Visit And Sales Statistics</h4>
-                                <div id="visit-sale-chart-legend"
-                                    class="rounded-legend legend-horizontal legend-top-right float-right"></div>
+                                <h4 class="card-title float-left">Amazon Audio List</h4>
+                                <div class="float-right">
+                                    <div class="search-field d-none d-md-block">
+                                        <form class="d-flex align-items-center h-100" action="#">
+                                            <div class="input-group">
+                                                <input type="search"
+                                                    class="form-control bg-transparent border-solid border-dark rounded-lg"
+                                                    placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <canvas id="visit-sale-chart" class="mt-4"></canvas>
+                            <div class="grid-margin stretch-card">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center font-weight-bold "> Title </th>
+                                            <th class="text-center"> Audio Preview </th>
+                                            <th class="text-center"> Created Date </th>
+                                            <th class="text-center"> Action </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="clearfix pb-2">
+                                <h6 class="float-left">Showing 1 to 6 of 15 entries</h6>
+                                <div class="float-right">
+                                    <i class="mdi mdi-chevron-double-left"></i>
+                                    <label class="badge badge-primary">1</label>
+                                    <i class="mdi mdi-chevron-double-right"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 grid-margin stretch-card">
+                <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Traffic Sources</h4>
-                            <canvas id="traffic-chart"></canvas>
-                            <div id="traffic-chart-legend"
-                                class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
+                            <div class="clearfix">
+                                <h4 class="card-title float-left">Google Audio List</h4>
+                                <div class="float-right">
+                                    <div class="search-field d-none d-md-block">
+                                        <form class="d-flex align-items-center h-100" action="#">
+                                            <div class="input-group">
+                                                <input type="search"
+                                                    class="form-control bg-transparent border-solid border-dark rounded-lg"
+                                                    placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-margin stretch-card">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center font-weight-bold "> Title </th>
+                                            <th class="text-center"> Audio Preview </th>
+                                            <th class="text-center"> Created Date </th>
+                                            <th class="text-center"> Action </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-primary text-center">
+                                            <td class="text-left">
+                                                <span class="text-black font-weight-bold">Lorem Ipsum </span><br />
+                                                by Lorem Ipsum
+                                            </td>
+                                            <td>
+                                                <i class="mdi mdi-play text-primary icon-lg"></i>
+                                            </td>
+                                            <td> 01-07-2020 </td>
+                                            <td>
+                                                <button type="button" class="btn btn-gradient-primary">Download</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="clearfix pb-2">
+                                <h6 class="float-left">Showing 1 to 6 of 15 entries</h6>
+                                <div class="float-right">
+                                    <i class="mdi mdi-chevron-double-left"></i>
+                                    <label class="badge badge-primary">1</label>
+                                    <i class="mdi mdi-chevron-double-right"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-12 grid-margin">
                     <div class="card">
                         <div class="card-body">
@@ -341,17 +562,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a
-                        href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © {{ now()->year }} <a
+                        href="#" target="_blank">Voicedash.io</a>. All rights
                     reserved.</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
-                        class="mdi mdi-heart text-danger"></i></span>
+                {{-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+                    <i class="mdi mdi-heart text-danger"></i>
+                </span> --}}
             </div>
         </footer>
         <!-- partial -->

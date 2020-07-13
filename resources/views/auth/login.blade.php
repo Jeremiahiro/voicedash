@@ -34,14 +34,13 @@
                                 @enderror
                             </div>
                             <div class="mt-3">
-                                <button type="submit"
-                                    class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn btn-rounded">
+                                <button type="submit" class="btn btn-gradient-primary btn-rounded btn-fw btn-lg btn-block font-weight-medium auth-form">
                                     Get Started
                                 </button>
                             </div>
                             @if (Route::has('password.request'))
                             <div class="my-4 d-flex justify-content-end">
-                                <a class="auth-link text-black" href="{{ route('password.request') }}">
+                                <a class="btn btn-link btn-rounded btn-fw auth-form text-black" href="{{ route('password.request') }}">
                                     {{ __('Forgot Password?') }}
                                 </a>
                             </div>

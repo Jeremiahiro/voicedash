@@ -7127,19 +7127,19 @@ button.bg-dark:focus {
   background-color: transparent !important; }
 
 .border, .loader-demo-box {
-  border: 1px solid #ebedf2 !important; }
+  border: 2px solid #ebedf2 !important; }
 
 .border-top {
-  border-top: 1px solid #ebedf2 !important; }
+  border-top: 2px solid #ebedf2 !important; }
 
 .border-right {
-  border-right: 1px solid #ebedf2 !important; }
+  border-right: 2px solid #ebedf2 !important; }
 
 .border-bottom {
-  border-bottom: 1px solid #ebedf2 !important; }
+  border-bottom: 2px solid #ebedf2 !important; }
 
 .border-left {
-  border-left: 1px solid #ebedf2 !important; }
+  border-left: 2px solid #ebedf2 !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -8142,6 +8142,12 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1030; }
+
+.fixed-top-right {
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: 1030; }
 
 .fixed-bottom {

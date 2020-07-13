@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,12 +27,20 @@
     @yield('style')
 
 </head>
+
 <body>
     <div id="app" class="container-scroller">
 
         @yield('header')
-
         <main class="">
+            @if (session('status'))
+            <div class="w-50 fixed-top-right alert alert-success alert-dismissible fade show" role="alert">
+                <strong>{{ session('status') }}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @endif
             @yield('content')
         </main>
 
@@ -51,4 +60,5 @@
     @yield('script')
 
 </body>
+
 </html>
