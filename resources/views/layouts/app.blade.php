@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/vendors/css/vendor.bundle.base.css')}}">
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('frontend/images/favicon.png') }}" />
+    @yield('style')
+
 </head>
 <body>
     <div id="app" class="container-scroller">
@@ -46,8 +48,6 @@
     <script src="{{ asset('frontend/js/hoverable-collapse.js') }}"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="{{ asset('frontend/js/dashboard.js') }}"></script>
-    <script src="{{ asset('frontend/js/todolist.js') }}"></script>
     @yield('script')
 
 </body>
