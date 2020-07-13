@@ -12,16 +12,15 @@
                     <div class="auth-form-light bg-secondary text-left p-5 rounded-xl">
                         <div class="text-center">
                             <h1 class="text-primary">VoiceDash.co </h1>
-                            <h4>Forgot Password</h4>
+                            <h4>Confirm Password</h4>
                         </div>
-                        <form method="POST" action="{{ route('password.email') }}">
+                        <form method="POST" action="{{ route('password.confirm') }}">
                             @csrf
                             <div class="form-group">
-                                <input type="email"
-                                    class="form-control form-control-lg rounded-xl bg-light text-black @error('email') is-invalid @enderror"
-                                    id="email" name="email" placeholder="Email Address" value="{{ old('email') }}"
-                                    required>
-                                @error('email')
+                                <input type="password"
+                                    class="form-control form-control-lg rounded-xl bg-light text-black @error('password') is-invalid @enderror"
+                                    id="password" name="password" placeholder="Password" required>
+                                @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -29,10 +28,18 @@
                             </div>
                             <div class="mt-3">
                                 <button type="submit"
-                                    class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn btn-rounded">
+                                    class="btn btn-gradient-primary btn-rounded btn-fw btn-lg btn-block font-weight-medium auth-form">
                                     Proceed
                                 </button>
                             </div>
+                            @if (Route::has('password.request'))
+                            <div class="my-4 d-flex justify-content-end">
+                                <a class="btn btn-link btn-rounded btn-fw auth-form text-black"
+                                    href="{{ route('password.request') }}">
+                                    {{ __('Forgot Password?') }}
+                                </a>
+                            </div>
+                            @endif
                         </form>
                     </div>
                 </div>
