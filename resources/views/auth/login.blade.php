@@ -61,7 +61,6 @@
 </div>
 @endsection
 @section('footer')
-@include('partials.footer')
 @endsection
 @section('script')
 @endsection
