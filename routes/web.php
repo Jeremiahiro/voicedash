@@ -21,9 +21,15 @@ Auth::routes([
 ]);
 
 Route::middleware('auth')->group(function () {
-    Route::get('/', function () {
-        return view('homepage');
+    Route::get('/', 'VoicedashController@index')->name('home');
+    Route::resource('/voices', 'VoicedashController');
+    Route::resource('/video', 'VideoController');
+    Route::resource('/audio', 'AudioController');
+    Route::resource('/image', 'ImageController');
+
+    Route::prefix('audio')->group(function () {
+        Route::resource('/tts/polly', 'AmazonController');
+        Route::resource('/tts/wavenet', 'GoogleController');
     });
-    Route::get('/dashboard', 'HomeController@index')->name('home');
 });
 
