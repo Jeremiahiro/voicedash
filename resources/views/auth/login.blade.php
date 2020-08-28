@@ -10,10 +10,12 @@
             <div class="row flex-grow">
                 <div class="col-lg-6 mx-auto">
                     <div class="card">
-                        <div class="card-body bg-gradient-light auth-form-light p-5">
-                            <div class="text-left rounded-xl">
-                                <h1 class="text-center text-primary">VoiceDash.co </h1>
-                                <form class="pt-3" method="POST" action="{{ route('login') }}">
+                        <div class="card-body bg-gradient-light auth-form-light p-5 rounded-xl">
+                            <div class="text-left rounded-xl pt-5">
+                                <h1 class="text-center text-primary">
+                                    <img src="{{ asset('frontend/images/logo-full.svg') }}" alt="" width="300px">
+                                </h1>
+                                <form class="pt-5" method="POST" action="{{ route('login') }}">
                                     @csrf
                                     <div class="form-group">
                                         <input type="email"
