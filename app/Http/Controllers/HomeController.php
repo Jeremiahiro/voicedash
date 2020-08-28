@@ -25,4 +25,12 @@ class HomeController extends Controller
     {
         return view('user.dashboard');
     }
+
+    /**
+     * redirect to TTS POLY Page
+     */
+    public function tospeech()
+    {
+        return view('voices.pages.to-speech');
+    }
 }

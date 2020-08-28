@@ -1,15 +1,12 @@
-<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <link rel="shortcut icon" href="{{ asset('frontend/images/favicon.png') }}" />
-        <h1 class="navbar-brand brand-logo"><a href="/" class="text-primary">VoiceDash</a></h1>
-        {{-- <a class="navbar-brand brand-logo" href="/"><img src="{{ asset('frontend/images/logo.svg') }}" alt="logo" /></a> --}}
-        {{-- <a class="navbar-brand brand-logo-mini" href="index.html"><img --}}
-                {{-- src="{{ asset('frontend/images/logo-mini.svg') }}" alt="logo"/></a> --}}
+<nav class="navbar default-layout-navbar bg-gradient-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <div class="text-center bg-gradient-light navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="{{ route('home')}}"><img src="{{ asset('frontend/images/logo-full.svg') }}" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="{{ route('home')}}"><img src="{{ asset('frontend/images/logo-mini.svg') }}" alt="logo" /></a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
-        </button>
+          </button>
         <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
                 <div class="input-group">
@@ -83,7 +80,7 @@
                     </div>
                 </a>
                 <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                    <a class="dropdown-item text-primary" href="{{ route('logout') }}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                         <i class="mdi mdi-logout mr-2 text-primary"></i> Signout
                     </a>
